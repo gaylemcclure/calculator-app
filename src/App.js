@@ -46,19 +46,20 @@ function App() {
     numWord: "six"
   },
   { 
-    id: "num3",
-    value: 3, 
-    numWord: "three"
+    id: "num1",
+    value: 1, 
+    numWord: "one"
   },
   { 
     id: "num2",
     value: 2, 
     numWord: "two"
   },
+
   { 
-    id: "num1",
-    value: 1, 
-    numWord: "one"
+    id: "num3",
+    value: 3, 
+    numWord: "three"
   },
   { 
     id: "num0",
@@ -138,13 +139,14 @@ function App() {
 
   return (
     <div className="App">
+    <div className="container">
       <div className="total-container">
         <div className="total-wrapper" value={digits.newNum}>
           {total !== false ? total : digits.newNum}
         </div>
       </div>
       <div className="buttons-container">
-        <div className="container">
+        <div className="inner-container">
           {makeButtons}
           <Button class="total" number="=" click={handleTotal}/>
         </div>
@@ -152,7 +154,7 @@ function App() {
           {makeMath}
         </div>
       </div>
-      
+      </div>
     </div>
   );
 }

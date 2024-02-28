@@ -17,22 +17,41 @@ body {
 }
 
 .App {
-  width: 60%;
+  /* width: 60%;
   padding-left: 165px;
-  padding-top: 50px;
-}
-
-.buttons-container {
+  padding-top: 50px; */
   display: flex;
-  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+
 }
 
 .container {
-  width: 75%;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.buttons-container {
+   display: flex;
+  /*overflow: hidden; */
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 9px; */
+} 
+
+.inner-container {
+  /* width: 75%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 9px;
+  margin-top: 10px;
 }
 
 .number {
@@ -56,8 +75,15 @@ body {
 }
 
 .control-container {
-  width: 30%;
-  overflow: hidden;
+  /* width: 30%;
+  overflow: hidden; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 9px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 button.subtract {
@@ -81,7 +107,8 @@ button.divide {
 }
 
 .total {
-  padding: 49.5px 122px;
+  padding: 40px 60px;
+  font-size: 30px;
 }
 
 .total-wrapper {
@@ -94,8 +121,8 @@ button.divide {
 
 .total-container {
   border: 1px black solid;
-  width: 95.4%;
-  height: 100px;
+  max-height: 100px;
+  width: 95%;
 
 }
 
