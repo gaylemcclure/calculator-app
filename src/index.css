@@ -1,0 +1,106 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  width: 60%;
+  padding-left: 165px;
+  padding-top: 50px;
+}
+
+.buttons-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.number {
+  padding: 40px 60px;
+  font-size: 30px;
+}
+
+.control {
+  padding:40px 60px;
+  margin-right: 30px;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+.button-container {
+  width: 33.3%;
+  border: 1px black solid;
+  box-shadow: none;
+  border-style: none;
+  box-sizing: none;
+}
+
+.control-container {
+  width: 30%;
+  overflow: hidden;
+}
+
+button.subtract {
+  padding: 40px 56.5px;
+}
+
+button.multiply {
+  padding: 40px 54.5px;
+}
+
+button.add {
+  padding: 40px 53px;
+}
+
+button.divide {
+  padding: 40px 57px;
+}
+
+.zero {
+  justify-content: left;
+}
+
+.total {
+  padding: 49.5px 122px;
+}
+
+.total-wrapper {
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 50px;
+
+}
+
+.total-container {
+  border: 1px black solid;
+  width: 95.4%;
+  height: 100px;
+
+}
+
+.control-container .button-container {
+  width: 100%;
+}
+
+
